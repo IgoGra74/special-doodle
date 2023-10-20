@@ -1,4 +1,8 @@
 .header {
   padding: 20px 0;
   background-color: brown;
+  background-image: url('/img/vite-logo.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
