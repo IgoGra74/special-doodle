@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla App Template</title>
     
-    <script type="module" crossorigin src="/special-doodle/assets/index-a6532799.js"></script>
-    <link rel="stylesheet" href="/special-doodle/assets/index-d9959b6c.css">
+    <script type="module" crossorigin src="/special-doodle/assets/index-faf33b2e.js"></script>
+    <link rel="stylesheet" href="/special-doodle/assets/index-66cabebd.css">
   </head>
   <body>
     <!-- header -->
     <header class="header">
+  <button class="js-open-modal" data-modal="2">Открыть окно 2</button>
   <p>
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis amet illum
     optio minus, deserunt, ullam commodi delectus velit repudiandae alias
@@ -31,16 +32,47 @@
     <main>
       <!-- hero -->
       <section class="hero">
-    <img  src="/special-doodle/assets/vite-logo-51249ca9.png" alt="">
-    <h1>hero</h1></section>
+  <img src="/special-doodle/assets/vite-logo-51249ca9.png" alt="" />
+  <h1>hero</h1>
+  <button class="js-open-modal" data-modal="1">Открыть окно 1</button>
+</section>
 
       <!-- product -->
       <footer>
   <p>Footer</p>
+  <button class="js-open-modal" data-modal="3">Window 3</button>
 </footer>
 
     <!-- mob menu -->
-    <load src="" />
+    <!-- Элементы для вызова модальных окон, могут быть любые -->
+
+
+
+
+<!-- Несколько модальных окон -->
+
+<div class="modal" data-modal="1">
+  <!--   Svg иконка для закрытия окна  -->
+  <button class="js-modal-close">CLose</button>
+  <p class="modal__title">Заголовок окна 1</p>
+</div>
+
+<div class="modal" data-modal="2">
+  <!--   Svg иконка для закрытия окна  -->
+  <button class="js-modal-close">CLose</button>
+  </svg>
+  <p class="modal__title">Заголовок окна 2</p>
+</div>
+<div class="modal" data-modal="3">
+  <!--   Svg иконка для закрытия окна  -->
+  <button class="js-modal-close">CLose</button>
+  </svg>
+  <p class="modal__title">Window 3</p>
+</div>
+
+<!-- Подложка под модальным окном -->
+<div class="overlay js-overlay-modal"></div>
+
 
     
   </body>
